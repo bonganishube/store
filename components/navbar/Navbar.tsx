@@ -3,7 +3,7 @@ import Container from "../global/Container";
 import Logo from "./Logo";
 import NavSearch from "./NavSearch";
 import DarkMode from "./DarkMode";
-import LinkesDropdown from "./LinkesDropdown";
+import LinkesDropdown from "./LinksDropdown";
 import CartButton from "./CartButton";
 import { Suspense } from "react";
 
