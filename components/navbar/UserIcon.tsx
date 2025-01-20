@@ -10,7 +10,7 @@ const UserIcon = async () => {
   const profileImage = user?.imageUrl;
 
   if(profileImage) {
-    return <Image src={profileImage} alt="Profile image" className="w-6 h-6 rounded-full object-cover"/>
+    return <Image src={profileImage} width="1280" height="1280" alt="Profile image" className="w-6 h-6 rounded-full object-cover"/>
   }
   return (
     <div><LuUser className="w-6 h-6 bg-primary rounded-full text-white"/></div>
