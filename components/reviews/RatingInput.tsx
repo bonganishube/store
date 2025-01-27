@@ -24,7 +24,20 @@ function RatingInput({
       <Label htmlFor={name} className="capitalize">
         {labelText || name}
       </Label>
-      <Select
+      <Select defaultValue={numbers[0]} name={name} required>
+        <SelectTrigger>
+          <SelectValue></SelectValue>
+        </SelectTrigger>
+        <SelectContent>
+          {numbers.map((number) => {
+            return (
+              <SelectItem key={number} value={number}>
+                {number}
+              </SelectItem>
+            );
+          })}
+        </SelectContent>
+      </Select>
     </div>
   );
 }
