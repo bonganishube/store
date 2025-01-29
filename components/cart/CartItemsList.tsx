@@ -2,6 +2,7 @@ import { Card } from '@/components/ui/card';
 import { FirstColumn, SecondColumn, FourthColumn } from './CartItemColumns';
 import ThirdColumn from './ThirdColumn';
 import { CartItemWithProduct } from '@/utils/types';
+
 function CartItemsList({ cartItems }: { cartItems: CartItemWithProduct[] }) {
   return (
     <div>

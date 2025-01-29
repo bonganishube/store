@@ -592,7 +592,6 @@ export const fetchUserOrders = async () => {
 
 export const fetchAdminOrders = async () => {
   const user = await getAdminUser();
-
   const orders = await db.order.findMany({
     where: {
       isPaid: true,
